@@ -14,7 +14,7 @@ from bson.json_util import dumps
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://iamonfire11:helpmepls69@cluster0.wlxrg.mongodb.net/cough?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = "mongodb+srv://@cluster0.wlxrg.mongodb.net/cough?retryWrites=true&w=majority"
 mongo = PyMongo(app)
 
 id = 0
@@ -58,9 +58,9 @@ def getUserData():
 
 #SEND EMAIL
 def sendemail(tempfloat):
-    sender_email = 'finalproject.capstone.ja@gmail.com'
-    email_password = 'xjofgsudbcmgkfxt'
-    receiver_email = 'justinehughes999@gmail.com'
+    sender_email = ''
+    email_password = ''
+    receiver_email = ''
 
     if (tempfloat >40):
         message = """Workstation: 1
@@ -72,9 +72,9 @@ def sendemail(tempfloat):
         context = ssl.create_default_context()
 
         with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-            server.login("finalproject.capstone.ja@gmail.com", app_password)
+            server.login("@gmail.com", app_password)
             server.sendmail(sender_email, receiver_email, message)
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3000, host ="172.16.188.15")
+    app.run(debug=True, port=3000, host ="")
