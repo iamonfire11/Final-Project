@@ -62,7 +62,7 @@ def sendemail(tempfloat):
     email_password = ''
     receiver_email = ''
 
-    if (tempfloat >40):
+    if (tempfloat >38):
         message = """Workstation: 1
         Reported for having : High temperature
         Body temperature: {} C""".format(tempfloat)
