@@ -3,10 +3,10 @@ Final year Capstone Project
 
 The system here is "Temperature and Cough Rate Monitoring at Workstations."
 The system is required to :
-> Record cough sounds and determine the cough rate
+> Record cough sounds and determine the cough rate.
 > Record temperature using a contactless temperature sensor. 
-> Use a server 
-> Show scalability in design
+> Use a server.
+> Show scalability in design.
 > Send a warning email if the temperature is too high or the user is coughing too much.
 > Have a webpage showing various data relating to the system ie cough rate and temperature per workstation.
 
