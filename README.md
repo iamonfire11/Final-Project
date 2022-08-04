@@ -16,3 +16,13 @@ The audio recording is run through a YamNet model to determine how many coughs w
 The temp and cough rate are then stored in a cloud database (MongoDB) where that data is then reflected on a webpage. 
 If the temp or cough rate is too high :- temp(>38 C) & cough rate > 18 per day 
               then a warning email with the respective parameters is sent to the admin or manager of the system via SMTP.
+              
+References:
+https://realpython.com/playing-and-recording-sound-python/
+https://www.mathworks.com/help/audio/ref/classifysound.html
+
+Datasets:
+https://www.kaggle.com/datasets/mmoreaux/environmental-sound-classification-50
+https://zenodo.org/record/4498364#.YuwN-XbMLIX
+https://github.com/karolpiczak/ESC-50/blob/master/meta/esc50.csv
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YDEPUT
